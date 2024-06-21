@@ -1,0 +1,712 @@
+/*
+  Font Imports
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Mono&family=Syne:wght@400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* 
+  <uniquifier>: Use a unique and descriptive class name
+  <weight>: Use a value from 100 to 900 
+*/
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.nunito-sans-regular {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+/* 
+  <uniquifier>: Use a unique and descriptive class name
+  <weight>: Use a value from 400 to 800
+*/
+
+.syne-regular {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 
+  <uniquifier>: Use a unique and descriptive class name
+*/
+
+.roboto-mono-regular {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+body {
+  background-color: #F8FBFE;
+  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Syne", sans-serif;
+}
+
+:root {
+  --outer-margin: 1.875rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  position: relative;
+  margin: 0;
+}
+
+body main {
+    margin: 0 auto;
+    /* min-height: 100vh; */
+    max-width: 1600px;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+  background-color: #F1F5F9;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+p, ul {
+  font-size: .875rem;
+  line-height: 1.2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+section {
+  position: relative;
+  padding: 32px 40px 80px;
+}
+
+section:has(footer) {
+  padding: 0;
+}
+
+section:has(footer) p, section:has(footer) a {
+  padding: 0 1.25rem;
+}
+
+em {
+  font-style: normal;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.btn {
+  
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1.875rem;
+  width: fit-content;
+  transition: .3s ease-out;
+  border-radius: 8px;
+}
+
+.btn.primary {
+  border: 1px solid black;
+  color: black;
+}
+
+.btn.primary:hover {
+  background: black;
+  color: white;
+  transition: .3s ease-out;
+}
+
+section.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* padding: 0 .9375rem .9375rem; */
+  padding: 0 var(--outer-margin) 0;
+  position: relative;
+  width: 100%;
+  padding-top: 10em;
+}
+
+section.head .h1 {
+  font-family: 'PPMori Extralight', sans-serif;
+  font-size: 3.525rem;
+  font-weight: 600;
+  letter-spacing: -.48px;
+  line-height: 120%;
+  margin: 0;
+  max-width: 46.875rem;
+  text-wrap: balance;
+}
+
+
+
+section.head:has(p) {
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+section.head:has(p) p{
+  min-width: 10rem;
+}
+
+section.head:has(p) h1, section.head:has(p) p {
+  font-size: .875rem;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+section.intro picture {
+  position: relative;
+  background-color: #F1F5F9;
+  display: block;
+  height: 40rem;
+  height: 50vh;
+  height: calc(45vh - 32px);
+  /* height: calc(50vh - var(--outer-margin)); */
+  height: calc(45svh - 32px);
+  /* height: calc(50svh - var(--outer-margin)) */
+  border-radius: 8px;
+}
+
+section.intro img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+section.video {
+  background-color: #F1F5F9;
+  padding: var(--outer-margin);
+}
+
+section.video video {
+  border-radius: 8px;
+  display: block;
+  height: fit-content;
+  margin: 0 auto;
+  max-width: 50rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+section.video video source {
+  border-radius: 8px;
+  box-shadow: 10px 5px 5px rgb(0 0 0 / 10%);
+}
+
+section.about .content, section.content {
+  font-family: "Inter", sans-serif;
+}
+
+section.about .content {
+  grid-area: 1 / 2 / 2 / 3;
+}
+section.about article, section.content .content .text article {
+  margin-bottom: 1.25rem;
+}
+
+section.about article.information p{
+  margin-bottom: 1.25rem;
+}
+
+section.about article.information p:last-child{
+  margin-bottom: 0;
+}
+
+
+details {
+  border: 1px solid black;
+  border-radius: 8px;
+  background: #F1F5F9;
+  margin-bottom: 1.25rem;
+}
+
+details[open] summary {
+  background: black;
+  color: white;
+  border-radius: 8px 8px 0 0;
+}
+
+details summary {
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  padding: 1rem 1.25rem;
+}
+
+details p {
+  padding: 1rem 1.25rem;
+}
+
+
+
+section.about .logos {
+  display: grid;
+  gap: .625rem;
+  grid-gap: .625rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+section.about .logos>picture {
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  background: #F1F5F9;
+  display: flex;
+  justify-content: center;
+  padding: .625rem;
+}
+
+section.about .logos>picture img {
+  border-radius: 8px;
+  max-height: 3rem;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+section.about .logos>picture img.no-border {
+  border-radius: 0;
+}
+
+section.content .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+section.content .content picture:first-child {
+  margin-right: calc(1.25rem / 2)
+}
+
+section.content .content picture:last-child {
+  margin-left: calc(1.25rem / 2);
+}
+
+section.content h2, section.content h3 {
+  font-family: 'PPMori Extralight';
+  font-size: 2.525rem;
+  /* font-weight: 500; */
+  letter-spacing: -.48px;
+  line-height: 120%;
+  margin: 0;
+  max-width: 46.875rem;
+  text-wrap: balance;
+}
+
+section.content .content picture img {
+  height: 100%;
+  object-fit: cover;  
+}
+
+section.about label, section.content label {
+  font-variation-settings: 'wght' 600;
+  color: black;
+  display: block;
+  font-size: .75rem;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+section.content label {
+  font-weight: 500;
+}
+
+section.about h2 {
+  font-family: 'PPMori Extralight';
+  font-size: 2.525rem;
+  letter-spacing: -.48px;
+  line-height: 120%;
+}
+
+section.about p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -.48px;
+  line-height: 135%;
+  margin: 0;
+}
+
+section.content p {
+  font-size: 1.125rem;
+  line-height: 1.35;
+  margin: 0;
+  margin-bottom: 1.25rem;
+}
+
+
+section.project-review h3 {
+  font-family: 'PPMori Extralight';
+  font-weight: 600;
+  font-size: 2.525rem;
+  letter-spacing: -.48px;
+  line-height: 120%;
+  margin: 0;
+  max-width: 46.875rem;
+  text-wrap: balance;
+  padding-bottom: 32px;
+}
+
+section.project-review .see-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 6.5rem;
+  margin: 0 auto;
+}
+
+
+.project-review ul.list, .projects ul.list {
+  box-sizing: border-box;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-block-end: 30px;
+}
+
+.project-review ul.list li picture, .projects ul.list li picture {
+  border: none;
+  display: block;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+
+.project-review ul.list li img, .projects ul.list li img{
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+.project-content h4,.project-content p {
+  margin: 0;
+}
+
+.project-content {
+  margin-top: .9375rem;
+}
+
+.project-content h4{
+  font-family: "PPMori Extralight";
+  font-size: 1.7rem;
+  line-height: 1.2;
+  margin-bottom: .625rem;
+}
+
+.project-content p span{
+  font-family: 'PPMori Regular';
+  font-size: .875rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+section.projects {
+  padding-bottom: 11.25rem;
+}
+
+footer {
+  background: #000;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh + 1px);
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+footer .mail span {
+  font-family: 'PPMori SemiBold';
+  display: block;
+  font-size: 7.5rem;
+  letter-spacing: -.0625rem;
+  line-height: 1;
+}
+
+footer .mail {
+  transition: .3s ease-out;
+}
+
+footer .mail:hover {
+  opacity: .5;
+  transition: .3s ease-out;
+}
+
+footer p, footer p a {
+  font-feature-settings: "tnum";
+  font-size: .75rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.newsletter {
+  --background: #000;
+  --color: #fff;
+  color: #fff;
+  color: var(--color);
+  font-size: .75rem;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.newsletter fieldset {
+  align-items: center;
+  border: 0;
+  display: flex;
+  padding: 0;
+}
+
+.newsletter input {
+  background: none;
+  border-radius: 0;
+  border: 0;
+  color: currentColor;
+  min-width: 15rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.newsletter input::placeholder {
+  color: currentColor;
+}
+
+.newsletter input:focus-visible {
+  outline: none;
+}
+
+.newsletter button {
+  all: unset;
+  cursor: pointer;
+  padding: 0 0 0 1em;
+}
+
+.newsletter .line {
+  background: currentColor;
+  height: 1px;
+  margin-top: .3em;
+  width: 100%;
+}
+
+.notification-lenis{
+  background: rgb(0 0 0 / 30%);
+  bottom: 0;
+  display: none;
+  font-size: .75rem;
+  height: 100%;
+  padding: .625rem;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.notification-container {
+  background: white;
+  bottom: 1rem;
+  font-size: .75rem;
+  padding: .625rem;
+  position: fixed;
+  right: 1rem;
+  width: 25rem;
+}
+
+.notification-lenis .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: .625rem;
+  margin-top: .625rem;
+  margin: 0;
+}
+.notification-lenis form {
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+}
+.notification-lenis button {
+  background: transparent;
+  border: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1.875rem;
+  width: fit-content;
+}
+
+.notification-lenis button:first-child {
+  background: #e0eaf5;
+}
+
+@media (max-width: 43.75rem) {
+  /* Navigation */
+  header {
+    font-size: 1.125rem;
+  }
+  /* Head of page  */
+  section.head h1, section.project-review h3, section.content h2, section.content h3 {
+    font-size: 1.7rem !important;
+  }
+
+  /* About */
+  section.about .content {
+    grid-area: 1 / 1 / 1 / -1;
+    padding: 0;
+  }
+
+
+  .project-review ul.list, .projects ul.list {
+    grid-template-columns: 1fr;
+  }
+
+  section.content .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  section.content .content picture:last-child {
+    margin-left: 0;
+  }
+
+  section.head:has(p) {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: end;
+  }
+
+  section.about p {
+    font-size: 1.125rem;
+  }
+
+}
+
+
+section article p, 
+section article label,  
+section article picture,
+
+section.project-review h3,
+.project-review ul.list li, .projects ul.list li,
+
+section.content h2, section.content h3, section.about h2  ,section.content picture, section.intro:not(:first-child) picture{
+  animation: text-scroll-watcher ease-out forwards;
+  animation-timeline: view();
+  animation-range-end: 20vh;
+}
+
+section.intro img, .project-review ul.list li img, .projects ul.list li img, section.content img {
+  object-position: 0 0; /* Initial position */
+  animation: scroll-watcher linear;
+  animation-timeline: view();
+  animation-duration: 1ms; /* Firefox requires this to apply the animation */
+}
+
+footer {
+  animation: footer-scroll-watcher linear;
+  animation-timeline: view();
+  animation-range-end: 100vh;
+}
+
+@keyframes scroll-watcher {
+  from {
+    -o-object-position: 50% 30%; /* Initial position */
+    object-position: 50% 30%; /* Initial position */
+    /* 50 30 */
+  }
+  to {
+    -o-object-position: 50% 70%; /* Target position */
+    object-position: 50% 70%; /* Target position */
+    /* 50 70 */
+  }
+}
+
+@keyframes text-scroll-watcher {
+  from {
+    transform: translateY(4.5rem);
+    opacity: .5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes footer-scroll-watcher {
+  from {
+    height: 50vh;
+  }
+  to {
+    transform: 100vh;
+  }
+}
+
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

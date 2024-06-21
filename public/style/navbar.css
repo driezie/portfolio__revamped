@@ -1,0 +1,72 @@
+.header-container {
+    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: difference;
+    color: white;
+    background-color: black;
+}
+
+header {
+    max-width: 1600px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    /* padding: 1.5rem var(--outer-margin); */
+    font-size: 1.5rem;
+    line-height: 120%;
+    font-weight: 600;
+    font-family: 'PPMori Extralight', sans-serif;
+    
+}
+
+header nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav a.active {
+    opacity: 1;
+}
+
+header .logo a {
+    
+    text-decoration: none;
+}
+
+header .logo span:first-child {
+    display: none;
+}
+
+header .logo span:last-child {
+    display: block;
+}
+
+@media (max-width: 43.75rem) {
+    header {
+        padding: 0.879rem var(--outer-margin);
+    }
+
+    /* Navbar */
+    header .logo span:first-child {
+        display: block;
+    }
+
+    header .logo span:last-child {
+        display: none;
+    }
+
+    header nav {
+        gap: 1rem;
+    }
+}

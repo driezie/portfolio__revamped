@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: 'PPMori Extralight';
+  src: url('/fonts/mori/PPMori-Extralight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPMori Extralight';
+  src: url('/fonts/mori/PPMori-ExtralightItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPMori Regular';
+  src: url('/fonts/mori/PPMori-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPMori Regular';
+  src: url('/fonts/mori/PPMori-RegularItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPMori SemiBold';
+  src: url('/fonts/mori/PPMori-SemiBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPMori SemiBold';
+  src: url('/fonts/mori/PPMori-SemiBoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+
+
+/* 
+
+PPNeueMontreal-Bold.otf
+PPNeueMontreal-Book.otf
+PPNeueMontreal-Italic.otf
+PPNeueMontreal-Medium.otf
+PPNeueMontreal-SemiBolditalic.otf
+PPNeueMontreal-Thin.otf
+
+*/
+
+@font-face {
+    font-family: 'PPNeueMontreal';
+    src: url('/fonts/NeueMontreal/PPNeueMontreal-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PPNeueMontreal';
+    src: url('/fonts/NeueMontreal/PPNeueMontreal-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PPNeueMontreal';
+    src: url('/fonts/NeueMontreal/PPNeueMontreal-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'PPNeueMontreal';
+    src: url('/fonts/NeueMontreal/PPNeueMontreal-Medium.otf') format('opentype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PPNeueMontreal';
+    src: url('/fonts/NeueMontreal/PPNeueMontreal-SemiBolditalic.otf') format('opentype');
+    font-weight: 600; /* SemiBold */
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'PPNeueMontreal';
+    src: url('/fonts/NeueMontreal/PPNeueMontreal-Thin.otf') format('opentype');
+    font-weight: 100; /* Thin */
+    font-style: normal;
+  }
