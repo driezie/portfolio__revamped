@@ -5,9 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-/* 
+/*
   <uniquifier>: Use a unique and descriptive class name
-  <weight>: Use a value from 100 to 900 
+  <weight>: Use a value from 100 to 900
 */
 
 .inter-regular {
@@ -29,7 +29,7 @@
     "YTLC" 500;
 }
 
-/* 
+/*
   <uniquifier>: Use a unique and descriptive class name
   <weight>: Use a value from 400 to 800
 */
@@ -41,7 +41,7 @@
   font-style: normal;
 }
 
-/* 
+/*
   <uniquifier>: Use a unique and descriptive class name
 */
 
@@ -131,7 +131,7 @@ em {
 }
 
 .btn {
-  
+
   display: flex;
   justify-content: center;
   padding: 1rem 1.875rem;
@@ -337,7 +337,7 @@ section.content h2, section.content h3 {
 
 section.content .content picture img {
   height: 100%;
-  object-fit: cover;  
+  object-fit: cover;
 }
 
 section.about label, section.content label {
@@ -631,14 +631,28 @@ footer p, footer p a {
 }
 
 
-section article p, 
-section article label,  
+section article p,
+section article label,
 section article picture,
 
 section.project-review h3,
 .project-review ul.list li, .projects ul.list li,
 
-section.content h2, section.content h3, section.about h2  ,section.content picture, section.intro:not(:first-child) picture{
+section article a,
+section article p,
+section article label,
+section article picture,
+section.project-review h3,
+.project-content,
+.project-review ul.list li,
+.projects ul.list li,
+section.project-review .see-more,
+section.content h2,
+section.content h3,
+section.about h2,
+section.content picture,
+section.intro:not(:first-child) picture,
+details {
   animation: text-scroll-watcher ease-out forwards;
   animation-timeline: view();
   animation-range-end: 20vh;

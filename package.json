@@ -2,7 +2,7 @@
   "name": "fdnd-node",
   "version": "1.0.0",
   "description": "Node example",
-  "main": "app.js",
+  "main": "/api/index.js",
   "scripts": {
     "start": "vercel dev"
   },
